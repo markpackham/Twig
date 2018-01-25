@@ -1,0 +1,15 @@
+Hello, {{name}}, You are {{age}} years old.
+
+{% if age > 15 %}
+<br>You are over the age of 15<br><br>
+{% endif %}
+
+{% if age > 150 %}
+<br>You are over the age of 150<br><br>
+{% endif %}
+
+{% for user in users %}
+{{user.name}} is {{user.age}} years old<br>
+{% endfor %}
+
+This is an md5 filter {{'hashMeNow' | md5}}
